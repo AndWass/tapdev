@@ -1,0 +1,14 @@
+[package]
+name = "tapdev"
+version = "0.1.0"
+authors = ["Andreas Wass <wass.andreas@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ifstructs = "0.1.1"
+nix = ">=0.17.0"
+etherparse = "0.9"
+tokio = { version = "0.2", features = ["rt-core", "fs", "sync", "blocking", "macros", "io-util"] }
+tokio-serial = "4.3.3"
