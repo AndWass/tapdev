@@ -10,5 +10,7 @@ edition = "2018"
 ifstructs = "0.1.1"
 nix = ">=0.17.0"
 etherparse = "0.9"
-tokio = { version = "0.2", features = ["rt-core", "fs", "sync", "blocking", "macros", "io-util"] }
+tokio = { version = "0.2", features = ["rt-core", "fs", "sync", "blocking", "macros", "io-util", "time"] }
 tokio-serial = "4.3.3"
+serialport = "3.3.0"
+mio = "0.6.22"

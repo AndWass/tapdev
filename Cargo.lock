@@ -451,7 +451,9 @@ version = "0.1.0"
 dependencies = [
  "etherparse",
  "ifstructs",
+ "mio",
  "nix 0.17.0",
+ "serialport",
  "tokio",
  "tokio-serial",
 ]
@@ -477,6 +479,7 @@ dependencies = [
  "memchr",
  "mio",
  "pin-project-lite",
+ "slab",
  "tokio-macros",
 ]
 

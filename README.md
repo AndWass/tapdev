@@ -2,12 +2,12 @@
 
 ## What?
 
-A small program that creates a TAP-device and opens a serial-port. All data coming from the TAP-device is written
-to the serial-port and all data read from the serial port is written to the TAP-device.
+A small linux-only program that creates a TAP-device and opens a serial-port. All data coming from the TAP-device
+is written to the serial-port and all data read from the serial port is written to the TAP-device.
 
 At the moment this can be used to establish a bridge between two computers:
 
-```
+```shell script
 # computer A, assumed to have an IP address 192.168.0.1:
 $ socat -d -d tcp-listen:12345 pty,raw,echo=0,link=$HOME/dev/ttyV0
 $ sudo ./tapdev $HOME/dev/ttyV0
